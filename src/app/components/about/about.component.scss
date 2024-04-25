@@ -1,6 +1,12 @@
+h3{
+    width: fit-content;
+    font-weight: bold;
+    border-bottom: 4px solid #9200B9;
+    color: #9200B9;
+}
+
 img{
     border-radius: 5px;
-    filter: grayscale(100%);
     position: relative;
 
     &::before{
