@@ -1,0 +1,21 @@
+<div class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center top text-white">
+    <div class="info border-white border text-center">
+        <div class="effect">
+            <h1>
+                Hello, I'm Egor
+            </h1>
+        </div>
+        <h5 class="fw-normal text-uppercase">Full Stack Developer</h5>
+    </div>
+    <div class="about" [ngClass]="opened ? 'opened' : 'no-opened'">
+        <nav>
+            <a href="#">Github</a>
+            <a href="#">Instagram</a>
+        </nav>
+    </div>
+    <div class="menu" (click)="open()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</div>
