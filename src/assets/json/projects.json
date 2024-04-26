@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Egma Solutions",
+        "url": "https://www.egmasolutions.com",
+        "img": "/assets/img/projects/img1.PNG"
+    },
+    {
+        "name": "El Mirall",
+        "url": "https://www.elmirallescoladeball.com",
+        "img": "/assets/img/projects/img2.PNG"
+    },
+    {
+        "name": "Gastrobacus",
+        "url": "https://gastrobacus.netlify.app",
+        "img": "/assets/img/projects/img3.PNG"
+    }
+
+]
