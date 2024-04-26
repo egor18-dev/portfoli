@@ -11,21 +11,21 @@
       </p>
     </div>
     <div class="col-lg-4">
-        <form class="w-100">
+        <form class="w-100" [formGroup]="formGroup">
             <div class="form-group">
                 <label for="name" class="form-label fw-bold">Name:</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+                <input formControlName="name" type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
             </div>
             <div class="form-group mt-3">
                 <label for="email" class="form-label fw-bold">Email:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                <input formControlName="email" type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
             </div>
             <div class="form-group mt-3">
                 <label for="message" class="form-label fw-bold">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea formControlName="message" class="form-control" id="message" rows="3" placeholder="Enter a messagen"></textarea>
             </div>
             <div class="form-group mt-3">
-                <input type="submit" value="Enviar"> 
+                <input type="submit" [disabled]="formGroup.invalid" [ngStyle]="{'opacity': formGroup.invalid ? '0.7' : 1}" value="Enviar"> 
             </div> 
         </form>
     </div>
