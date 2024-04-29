@@ -10,7 +10,7 @@
     <div class="about" [ngClass]="opened ? 'opened' : 'no-opened'">
         <nav>
             <a href="https://github.com/egor18-dev">Github</a>
-            <a href="#">Instagram</a>
+            <a (click)="close()">Tancar</a>
         </nav>
     </div>
     <div class="menu" (click)="open()">
